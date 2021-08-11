@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-from django.utils.encoding import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from .signals import attachments_attached
 from .utils import get_context_key, get_storage, get_default_path, JSONField, import_class
 from django.conf import settings
